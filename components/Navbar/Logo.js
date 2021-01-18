@@ -8,7 +8,7 @@ const Logo = ({ ...rest }) => {
       <Link to="top" spy={true} smooth={true}>
         <svg
           width="100"
-          height="40"
+          height="33"
           {...rest}
           viewBox="0 0 820 277"
           fill="none"
