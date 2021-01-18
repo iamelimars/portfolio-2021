@@ -1,5 +1,6 @@
 import { Divide as Hamburger } from "hamburger-react";
 import { useTransition, config } from "react-spring";
+import styled from "styled-components";
 import SideDrawer from "./SideDrawer";
 
 const MobileNav = ({ isMenuOpen, setIsMenuOpen, darkMode }) => {
@@ -11,7 +12,7 @@ const MobileNav = ({ isMenuOpen, setIsMenuOpen, darkMode }) => {
     leave: { opacity: 0, transform: "translateX(50%)" },
   });
   return (
-    <div>
+    <Container>
       {SideDrawerTransition.map(
         ({ item, key, props }) =>
           item && (
@@ -33,8 +34,15 @@ const MobileNav = ({ isMenuOpen, setIsMenuOpen, darkMode }) => {
         label="Show menu"
         hideOutline={true}
       />
-    </div>
+    </Container>
   );
 };
+
+const Container = styled.div`
+  display: none;
+  @media only screen and (max-width: 830px) {
+    display: block;
+  }
+`;
 
 export default MobileNav;

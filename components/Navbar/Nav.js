@@ -25,7 +25,13 @@ const Nav = () => {
     <Container>
       <Wrapper>
         <Logo />
-        {isMobile ? (
+        <MobileNav
+          darkMode={darkMode}
+          isMenuOpen={isMenuOpen}
+          setIsMenuOpen={setIsMenuOpen}
+        />
+        <DesktopNav darkMode={darkMode} />
+        {/* {isMobile ? (
           <MobileNav
             darkMode={darkMode}
             isMenuOpen={isMenuOpen}
@@ -33,7 +39,7 @@ const Nav = () => {
           />
         ) : (
           <DesktopNav darkMode={darkMode} />
-        )}
+        )} */}
       </Wrapper>
     </Container>
   );

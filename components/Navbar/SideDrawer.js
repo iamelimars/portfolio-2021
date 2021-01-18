@@ -4,8 +4,10 @@ import { animated } from "react-spring";
 import styled from "styled-components";
 import DarkModeToggle from "./DarkModeToggle";
 import NavLinks from "./NavLinks";
+import lockBodyScroll from "../../utils/lockBodyScroll";
 
 const SideDrawer = ({ setIsMenuOpen, toggleDarkMode, ...rest }) => {
+  lockBodyScroll();
   return (
     <Container {...rest}>
       <Wrapper>
@@ -39,6 +41,10 @@ const Wrapper = styled.div`
   margin-top: 6rem;
   padding: 2rem 1rem;
   width: 100%;
+
+  svg {
+    margin-bottom: 5rem;
+  }
 `;
 
 export default SideDrawer;

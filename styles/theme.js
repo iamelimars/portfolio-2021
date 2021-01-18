@@ -4,6 +4,7 @@ export const lightTheme = {
   text: "#575757",
   bg: "#fff",
   footer: "#8B8B8B",
+  white: "#fff",
   mediaQueries: {
     smallest: `only screen and (max-width: 25em)`,
     smaller: "only screen and (max-width: 31.25em)",
@@ -21,6 +22,7 @@ export const darkTheme = {
   text: "#dadada",
   bg: "#212121",
   footer: "#fff",
+  white: "#fff",
   mediaQueries: {
     smallest: `only screen and (max-width: 25em)`,
     smaller: "only screen and (max-width: 31.25em)",

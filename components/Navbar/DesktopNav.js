@@ -12,8 +12,11 @@ const DesktopNav = () => {
 };
 
 const Container = styled.div`
-  display: flex;
   flex-direction: row;
+  display: flex;
+  @media only screen and (max-width: 830px) {
+    display: none;
+  }
   a {
     font-size: 0.7rem;
   }

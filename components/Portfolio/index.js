@@ -7,7 +7,7 @@ import PortfolioPost from "./PortfolioPost";
 const Portfolio = ({ posts, err }) => {
   return (
     <Container name="portfolio">
-      <h1>PORTFOLIO</h1>
+      <Title>PORTFOLIO</Title>
       <Wrapper>
         {err && <img className="err" src="/no-data.png" alt="Error Image" />}
         {posts &&
@@ -20,6 +20,14 @@ const Portfolio = ({ posts, err }) => {
   );
 };
 
+const Title = styled.h1`
+  text-align: center;
+  color: ${({ theme }) => theme.primary};
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 3rem 0;
+`;
+
 const Container = styled(Element)`
   display: flex;
   justify-content: center;
@@ -27,13 +35,6 @@ const Container = styled(Element)`
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  h1 {
-    text-align: center;
-    color: ${({ theme }) => theme.primary};
-    font-weight: 400;
-    font-size: 1.5rem;
-    margin: 3rem 0;
-  }
 
   .err {
     width: 300px;
