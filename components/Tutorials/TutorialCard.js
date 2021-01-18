@@ -46,6 +46,7 @@ const Container = styled.div`
     color: ${({ theme }) => theme.text};
     transition: all 0.2s ease-in-out;
     font-weight: 400;
+    font-size: 0.9rem;
   }
 `;
 
