@@ -46,7 +46,6 @@ export const getStaticProps = async () => {
       props: {
         docs: doc,
         tutorials: json.items,
-        resume: data,
       },
     };
   } catch (err) {
