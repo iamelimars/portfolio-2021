@@ -9,7 +9,7 @@ import Tutorials from "../components/Tutorials";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
-const Home = ({ docs, err, tutorials }) => {
+const Home = ({ docs, err, tutorials, resume }) => {
   return (
     <Bg>
       <Nav />
@@ -31,6 +31,12 @@ export const getStaticProps = async () => {
       Prismic.Predicates.at("document.type", "portfolio"),
       { orderings: "[document.last_publication_date desc]" }
     );
+    // const data = await client.query(
+    //   Prismic.Predicates.at("document.type", "resume"),
+    //   {}
+    // );
+
+    // // console.log(data);
     const res = await fetch(
       "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&part=contentDetails&part=status&part=id&maxResults=100&playlistId=UUoSU7SxPV3gxoSL0Rv__uQw&key=AIzaSyBCCy4agRBbHZxrniQQiq2NkmY_4d6LotY"
     );
@@ -40,6 +46,7 @@ export const getStaticProps = async () => {
       props: {
         docs: doc,
         tutorials: json.items,
+        resume: data,
       },
     };
   } catch (err) {

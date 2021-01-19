@@ -4,7 +4,6 @@ import { RoundedAnchor, OutlinedAnchor } from "../common/button";
 
 const PortfolioPost = ({ post: { data }, alt }) => {
   const { desc, image, site, source, title } = data;
-  console.log(data);
   return (
     <Container alt={alt}>
       <Img src={image.url} alt="" />

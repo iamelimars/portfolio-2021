@@ -37,7 +37,13 @@ const About = () => {
         CSS MODULES - FIREBASE - BABEL - GRAPHQL - NEXTJS - GIT - WEBPACK - JEST
         - ENZYME{" "}
       </p>
-      <RoundedAnchor secondary={true}>RESUME</RoundedAnchor>
+      <RoundedAnchor
+        target="_blank"
+        href="https://eli-portfolio.cdn.prismic.io/eli-portfolio/a0d10f0b-dabc-40b8-9691-18822acda0d1_Resume.pdf"
+        secondary={true}
+      >
+        RESUME
+      </RoundedAnchor>
     </Container>
   );
 };
