@@ -19,7 +19,7 @@ const HeroContent = () => {
         <RoundedLink to="about">ABOUT</RoundedLink>
         <Anchor
           target="_blank"
-          href="https://eli-portfolio.cdn.prismic.io/eli-portfolio/d95c71e5-8c73-47e6-853c-97e9074545a7_Resume.pdf"
+          href="https://eli-portfolio.cdn.prismic.io/eli-portfolio/88d25201-c6f0-4d3e-b766-b0fcbdfe0491_Resume.pdf"
         >
           RESUME
         </Anchor>
