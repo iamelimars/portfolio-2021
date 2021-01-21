@@ -9,7 +9,7 @@ import Tutorials from "../components/Tutorials";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
-const Home = ({ docs, err, tutorials, resume }) => {
+const Home = ({ docs, err, tutorials }) => {
   return (
     <Bg>
       <Nav />

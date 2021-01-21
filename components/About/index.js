@@ -8,16 +8,15 @@ const About = () => {
     <Container name="about">
       <h1>ABOUT ME</h1>
       <p>
-        I’m <span className="bold">Elisha J Marshall</span>, a creative{" "}
-        <span className="secondary">Web Developer</span> from{" "}
+        My name is <span className="bold">Elisha J Marshall</span> and I am a
+        <span className="secondary">Creative Web Developer</span> from{" "}
         <span className="primary">South Fl</span>. I have a serious passion for
-        building beautiful design experiences. I{" "}
-        <span className="primary">specialize</span> in creating fast and
+        building aesthetic design experiences. I specialize in creating fast and
         responsive websites that work on all devices.
       </p>
       <p>
-        I have been developing websites fulltime for the past{" "}
-        <span className="primary">4</span> years. I’ve also been teaching people
+        I have been developing websites fulltime for the past 4 years. In
+        addition to developing, in my spare time, I have been teaching others
         how to code on{" "}
         <a
           target="_blank"
@@ -26,7 +25,7 @@ const About = () => {
         >
           Youtube
         </a>{" "}
-        in my spare time for the past year.
+        over the last year.
       </p>
       <p className="italic">
         I’m a hard working and passionate developer that loves to learn!
@@ -39,7 +38,7 @@ const About = () => {
       </p>
       <RoundedAnchor
         target="_blank"
-        href="https://eli-portfolio.cdn.prismic.io/eli-portfolio/a0d10f0b-dabc-40b8-9691-18822acda0d1_Resume.pdf"
+        href="https://eli-portfolio.cdn.prismic.io/eli-portfolio/d95c71e5-8c73-47e6-853c-97e9074545a7_Resume.pdf"
         secondary={true}
       >
         RESUME
