@@ -8,7 +8,7 @@ const About = () => {
     <Container name="about">
       <h1>ABOUT ME</h1>
       <p>
-        My name is <span className="bold">Elisha J Marshall</span> and I am a
+        My name is <span className="bold">Elisha J Marshall</span> and I am a{" "}
         <span className="secondary">Creative Web Developer</span> from{" "}
         <span className="primary">South Fl</span>. I have a serious passion for
         building aesthetic design experiences. I specialize in creating fast and
